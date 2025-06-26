@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Password Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <h1>Random Password Generator</h1>
+
+  <form method="POST" action="/">
+    <div class="Output box">
+      <div class="enteryarea">
+        <div class="lable">Generated Password</div>
+        <input type="text" name="password" value="{{ password }}" placeholder="password appear here" readonly />
+      </div>
+    </div>
+
+    <div class="enteryarea">
+      <label for="length" class="lable">Password Length</label>
+      <input type="number" id="length" name="length" value="{{ length }}" min="1" />
+    </div>
+
+    <button type="submit" class="btn">Generate</button>
+
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="numberDigits" name="numberDigits" {% if 'numberDigits' in request.form %}checked{% endif %} />
+      <label class="form-check-label" for="numberDigits">Number Digits</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="alphabets" name="alphabets" {% if 'alphabets' in request.form or request.method != 'POST' %}checked{% endif %} />
+      <label class="form-check-label" for="alphabets">Alphabets</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="specialChars" name="specialChars" {% if 'specialChars' in request.form %}checked{% endif %} />
+      <label class="form-check-label" for="specialChars">Special Characters</label>
+    </div>
+  </form>
+</body>
+
+</html>
