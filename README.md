@@ -6,7 +6,7 @@ The app generates secure random passwords based on user-specified length and all
 
 ---
 **📸 Screenshot**
-<!-- Uploading "Screenshot 2025-07-01 150515.png"... -->
+![Image](https://github.com/user-attachments/assets/cd8a6c51-d7a1-4d11-a79a-8510f6358089)
 
 ## 🚀 Features
 
