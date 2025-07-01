@@ -5,8 +5,8 @@ This is a **Random Password Generator** web app built using **Python and Flask**
 The app generates secure random passwords based on user-specified length and allows copying them easily from the web interface.
 
 ---
-📸 **Screenshot**
-(You can add a screenshot of the password generator UI here)
+**📸 Screenshot**
+<!-- Uploading "Screenshot 2025-07-01 150515.png"... -->
 
 ## 🚀 Features
 
@@ -19,7 +19,7 @@ The app generates secure random passwords based on user-specified length and all
 ---
 
 ## 📁 Folder Structure
-
+```bash
 Random-Password-Genrator-using-Flask/
 │
 ├── static/
@@ -30,7 +30,7 @@ Random-Password-Genrator-using-Flask/
 │
 ├── app.py # Main Flask application (Python generates password)
 ├── README.md # Project documentation (this file)
-
+```
 
 ---
 
